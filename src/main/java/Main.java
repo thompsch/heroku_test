@@ -23,7 +23,7 @@ public class Main {
         ServletHolder serHol = ctx.addServlet(ServletContainer.class, "/rest/*");
         serHol.setInitOrder(1);
         serHol.setInitParameter("jersey.config.server.provider.packages",
-                "com.zetcode.res");
+                "resources");
 
         try {
             server.start();
@@ -32,7 +32,7 @@ public class Main {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
 
-            server.destroy();
+           // server.destroy();
         }
     }
 }
