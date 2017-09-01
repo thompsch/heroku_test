@@ -11,7 +11,8 @@ import org.glassfish.jersey.servlet.ServletContainer;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        Server server = new Server(8080);
+        Integer port = Integer.parseInt(System.getenv("PORT"));
+        Server server = new Server(port);
 
         ServletContextHandler ctx =
                 new ServletContextHandler(ServletContextHandler.NO_SESSIONS);
