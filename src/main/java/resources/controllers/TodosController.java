@@ -115,7 +115,7 @@ public class TodosController
     @POST
     @Path("/")
     @Consumes(MediaType.APPLICATION_JSON)
-    //@Produces(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
     public PostResponse addTodo (Todo tInput){
         try {
             if (tInput.Id != null) {
