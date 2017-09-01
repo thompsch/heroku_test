@@ -1,15 +1,15 @@
 package resources.controllers;
 
-        import resources.models.PostResponse;
-        import resources.models.Todo;
-        import resources.util.*;
+import resources.models.PostResponse;
+import resources.models.Todo;
+import resources.util.*;
 
-        import javax.ws.rs.*;
-        import javax.ws.rs.core.MediaType;
-        import java.util.ArrayList;
-        import java.util.Date;
-        import java.util.List;
-        import java.util.stream.Collectors;
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Path("/todos")
 public class TodosController
